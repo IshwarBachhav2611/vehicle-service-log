@@ -1,0 +1,142 @@
+
+.service-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.service-form-card {
+  border: 1px solid #e8edf5;
+}
+
+.service-form-card .form-label {
+  color: #4b5568;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.service-form-card .form-control,
+.service-form-card .form-select {
+  min-height: 42px;
+  border-color: #e0e6ef;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.service-form-card .form-control:focus,
+.service-form-card .form-select:focus,
+.service-search:focus {
+  border-color: #3478f6;
+  box-shadow: 0 0 0 3px rgb(52 120 246 / 10%);
+}
+
+.service-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.service-list-header h5 {
+  margin: 0 0 5px;
+  color: #202b3c;
+  font-weight: 700;
+}
+
+.service-list-header span {
+  color: #8993a4;
+  font-size: 13px;
+}
+
+.service-search {
+  width: 280px;
+  max-width: 100%;
+  min-height: 40px;
+  border-color: #e0e6ef;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.service-table {
+  margin-bottom: 0;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.service-table thead th {
+  padding: 14px 12px;
+  background: #f7f9fc;
+  color: #778397;
+  border-bottom: 1px solid #e8edf5;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.service-table tbody td {
+  padding: 15px 12px;
+  color: #4b5568;
+  border-bottom-color: #edf0f5;
+  vertical-align: middle;
+}
+
+.service-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.service-table tbody td strong {
+  color: #25344a;
+  font-weight: 700;
+}
+
+.service-table tbody td small {
+  margin-top: 3px;
+  font-size: 11px;
+}
+
+.service-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.service-actions .btn {
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.service-page .alert {
+  margin-bottom: 0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  .service-list-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .service-search {
+    width: 100%;
+  }
+
+  .service-page .page-toolbar {
+    align-items: flex-start;
+  }
+
+  .service-page .page-toolbar > button {
+    width: 100%;
+  }
+
+  .service-page .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .service-page .form-actions .btn {
+    width: 100%;
+  }
+}

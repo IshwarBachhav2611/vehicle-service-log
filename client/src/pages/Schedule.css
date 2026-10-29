@@ -1,0 +1,181 @@
+
+.schedule-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.schedule-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.schedule-stat-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e8edf5;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgb(32 43 60 / 3%);
+}
+
+.schedule-stat-card span {
+  color: #7a8699;
+  font-size: 13px;
+}
+
+.schedule-stat-card h3 {
+  margin: 10px 0 0;
+  color: #202b3c;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.schedule-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  font-size: 22px;
+}
+
+.total-icon {
+  background: #eaf1ff;
+}
+
+.upcoming-icon {
+  background: #fff4dc;
+}
+
+.overdue-icon {
+  background: #ffebed;
+}
+
+.schedule-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.schedule-list-header h5 {
+  margin: 0 0 6px;
+  color: #202b3c;
+  font-weight: 700;
+}
+
+.schedule-list-header p {
+  margin: 0;
+  color: #8993a4;
+  font-size: 13px;
+}
+
+.schedule-filter {
+  width: 170px;
+  max-width: 100%;
+  min-height: 40px;
+  border-color: #e0e6ef;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.schedule-filter:focus {
+  border-color: #3478f6;
+  box-shadow: 0 0 0 3px rgb(52 120 246 / 10%);
+}
+
+.schedule-table {
+  margin-bottom: 0;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.schedule-table thead th {
+  padding: 14px 12px;
+  background: #f7f9fc;
+  color: #778397;
+  border-bottom: 1px solid #e8edf5;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.schedule-table tbody td {
+  padding: 16px 12px;
+  color: #4b5568;
+  border-bottom-color: #edf0f5;
+  vertical-align: middle;
+}
+
+.schedule-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.schedule-table tbody td strong {
+  color: #25344a;
+  font-weight: 700;
+}
+
+.schedule-table tbody td small {
+  margin-top: 3px;
+  font-size: 11px;
+}
+
+.schedule-status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.status-upcoming {
+  background: #e7f7ee;
+  color: #218653;
+}
+
+.status-overdue {
+  background: #ffebed;
+  color: #d63847;
+}
+
+.schedule-page .alert {
+  margin-bottom: 0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .schedule-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .schedule-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-stat-card {
+    padding: 18px;
+  }
+
+  .schedule-list-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .schedule-filter {
+    width: 100%;
+  }
+}
